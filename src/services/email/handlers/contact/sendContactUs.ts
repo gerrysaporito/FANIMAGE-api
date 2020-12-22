@@ -22,7 +22,7 @@ export const sendContactUs = async (req: Request, res: Response) => {
             throw new HTTP400Error("No email or name or message in sendContactUs()");
         }
 
-        const subject = `FANIMAGE Contact Form Request.`;
+        const subject = `FANIMAGE Contact Form Request from ${email}.`;
         await awsSESApi(GeneralContactEmail, [GeneralContactEmail], subject, message);
 
         const msg = `Successfully sent out email to FANIMAGE. We will get back to you in 2-3 business days`;
