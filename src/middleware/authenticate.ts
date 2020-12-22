@@ -64,7 +64,8 @@ export const ensureCorrectUser = (req: Request, res: Response, next: NextFunctio
             case decoded.userInfo.id.toString() !== userId.toString(): {
                 throw new HTTP401Error();
             }
-            case await validateModuleCreator(moduleId.toString(), userId.toString()): {
+            case !(await validateModuleCreator(moduleId.toString(), userId.toString())): {
+
                 throw new HTTP401Error();
             }
         }

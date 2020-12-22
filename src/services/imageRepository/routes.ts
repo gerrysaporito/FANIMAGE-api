@@ -6,7 +6,7 @@ import removeModule from "./handlers/removeModule";
 import editModule from "./handlers/editModule";
 import getModules from "./handlers/getModules";
 import getModule from "./handlers/getModule";
-import { ensureCorrectUser } from "../../middleware/authenticate";
+import { ensureCorrectUser, loginRequired } from "../../middleware/authenticate";
 
 export default [
     {
@@ -20,7 +20,7 @@ export default [
         path: "/api/image-repository/v1/module/create",
         method: "post",
         handler: [
-            ensureCorrectUser,
+            loginRequired,
             createModule
         ],
     },

@@ -22,7 +22,6 @@ const editModule = async (req: Request, res: Response) => {
             throw new HTTP400Error("No moduleId or moduleInfo recieved in getModules()");
         }
 
-        console.log(moduleInfo)
         const module = await getModuleEntity(moduleId);
         updateModuleEntity(module, moduleInfo.title, moduleInfo.tags);
 
@@ -83,15 +82,6 @@ export const updateModuleEntity = async (module: Module, title: string, tags: st
 
     module.title = title;
     module.tags = tags;
-    console.log()
-    console.log()
-    console.log(module)
-    console.log()
-    console.log()
+
     await moduleRepository.save(module);
-    console.log()
-    console.log()
-    console.log(module)
-    console.log()
-    console.log()
 }
