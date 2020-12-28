@@ -18,4 +18,4 @@ To date, the current site has the ability to add, remove, and view images (if us
 
 In the near future, FANIMAGE will see user profiles, "My Images" page, shareable links and other 3rd party integrations, and more.
 
-The vision is to create an image repository, created by the community, for fan art wallpapers (mobile, desktop, etc).
+The vision is to create an image database, created by the community, for fan art wallpapers (mobile, desktop, etc). A one-stop-shop for any person who wants to upgrade their mobile or computer setup with images they love. And creators can sell their work to validate the value of their work and promote more creative submissions/contributions.
