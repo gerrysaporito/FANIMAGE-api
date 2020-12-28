@@ -1,29 +1,21 @@
-# Shopify Image Repository API
+# Shopify Image Repository API --  [fanimage.net](http://fanimage.net)
 
-## Technologies
+### CHALLENGE
+The task was to build an image repository api. It was an open ended task, restricted to nothing but imagination. The goal was to create an api that allows users to add, remove, and view images.
 
-- Typescript/Javascript
-- Node.js
-- Express
-- PostgreSQL
-- Redis
-- TypeORM
+### INSPIRATION
+This app was created to support the shopify image repository api backend challenge. 
+I am a big fan of anime and shiba inus. I have a shiba and his name is Primo. I was going to post pictures of him but I haven't created a worthy meme/gif of him yet.
+I originally started with creating a site where content creators can upload images of their fan art for desktops/mobile devices. Japanese animation studios are more open to creating fan art as they see it as open publicity, although selling may have some legal implications so it is not on the roadmap right now.
 
-## System Requirements
+### DESIGN DECISIONS
+This api is closed off from the public and is only accessible through the client found in the link above. This choice was made to restrict the ways users can access the image repository to a channel that can be controlled by FANIMAGE, limiting the number of issues that can occur. Also, this is an easy way to make sure users are authenticated and implement access controls.
 
-- Node.js
-- PostgreSQL
-- Linux terminal
-- Redis
+Tags may seem meaningless right now, but they were implemented to lay a pathway for a future release where search and filter would be the core.
 
-## Getting started
+### ROADMAP
+To date, the current site has the ability to add, remove, and view images (if user is authenticated). Tags have also been added to each image to allow searching in future versions. Buying and selling images is not in the roadmap as of now due to the possible legal complications.
 
-NOTE: Create a .env and ormconfig.json file using the example templates provided.
+In the near future, FANIMAGE will see user profiles, "My Images" page, shareable links and other 3rd party integrations, and more.
 
-1. clone repository
-2. cd into the repository
-3. npm install
-4. open a terminal and run "npm run webpack"
-5. open another terminal and run "redis-server"
-6. open another terminal and run "brew services start postgresql"
-7. open another terminal and run "npm run dev"
+The vision is to create an image repository, created by the community, for fan art wallpapers (mobile, desktop, etc).
