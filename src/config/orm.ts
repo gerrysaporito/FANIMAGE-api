@@ -18,6 +18,9 @@ const ormConfig: PostgresConnectionOptions = {
     port: parseInt(process.env.DB_CONNECTION_PORT || "5432"),
     synchronize: true,
     logging: false,
+    ssl: {
+        rejectUnauthorized: false,
+    },
     entities: [
         "dist/db/entity/**/*.js"
     ],
